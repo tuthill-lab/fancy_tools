@@ -5,14 +5,22 @@ import cloudvolume as cv
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.cluster.hierarchy import dendrogram
 from sklearn.cluster import AgglomerativeClustering
+import networkx as nx
 
 def get_networkx_graph(syn_df, source = 'pre_pt_root_id', 
                        target = 'post_pt_root_id', edge_attr = 'count',
-                       has_soma=True):
+                       has_soma=True,
+                       soma_table = 'soma_jan2022'):
+    
+    client = CAVEclient()
+    dataset = 'fanc_production_mar2021'
+    client = CAVEclient(dataset)
+
+    soma_df = client.materialize.query_table(soma_table)
     edge_df = syn_df.groupby([source, target]).size().sort_values(ascending=False).reset_index(name=edge_attr)
     
-    if has_soma ==True:
-        edge_df['has_soma'] = edge_df[target].isin(soma_table.pt_root_id)
+    if has_soma ==True:       
+        edge_df['has_soma'] = edge_df[target].isin(soma_df.pt_root_id)
         edge_df = edge_df.query('has_soma==True')
         
     graph = nx.from_pandas_edgelist(edge_df, source=source, 
@@ -33,28 +41,29 @@ def get_edge_df(syn_df, source = 'pre_pt_root_id',
     return edge_df
 
 #def add_clustered_order(edge_df, cluster_type = 'Agglomerative', sim_type ='cosine'):
-    
+
 
 def get_asymm_conn_mat(syn_df, has_soma = True, weight='count', soma_table = 'soma_jan2022'):
     g = get_networkx_graph(syn_df, has_soma=has_soma, edge_attr=weight)
     
-    edge_df = get_edge_df(syn_df, soma_table=soma_table)
+    edge_df = get_edge_df(syn_df, soma_table=soma_table, edge_attr=weight)
     
     targets = list(edge_df.post_pt_root_id.unique())
     sources = list(edge_df.pre_pt_root_id.unique())
     
+    # Get indices for g.nodes indicating which node IDs are sources and which are targets
     source_ix, target_ix = [], []
     for ix, i in enumerate(g.nodes()):
         if i in sources:
-            source_ix.append(ix)
+            source_ix.append(ix) 
         if i in targets:
-            target_ix.append(ix)
-            
-    conn_mat = nx.to_numpy_matrix(g, weight=weight)
+            target_ix.append(ix)    
+
+    conn_mat = nx.to_numpy_matrix(g, weight=weight) 
     asymm_conn_mat = conn_mat[source_ix,:]
     asymm_conn_mat = asymm_conn_mat[:,target_ix]
     
-    return asymm_conn_mat, source_ix, target_ix
+    return asymm_conn_mat, sources, targets
 
 
 def get_clustered_order(sim_mat, distance_threshold = 0, 
@@ -93,19 +102,21 @@ def get_clustered_order(sim_mat, distance_threshold = 0,
     
     return parsed_order
 
-def get_sim_matrix(syn_df, asymmetric = True, weight='count'):
+def get_sim_matrix(syn_df, asymmetric = True, weight='count', has_soma = True):
     
     #get weighted connectivity matrix from networkx graph
     if asymmetric:
-        conn_mat = get_asymm_conn_mat(syn_df, has_soma = has_soma, weight=weight)
+        conn_mat, sources, targets = get_asymm_conn_mat(syn_df, has_soma = has_soma, weight=weight)
     else:
-        g = get_networkx_graph(syn_df)
+        g = get_networkx_graph(syn_df, has_soma = has_soma, edge_attr=weight)
         conn_mat = nx.to_numpy_matrix(g, weight=weight)
-        
+     
+    conn_mat = np.asarray(conn_mat) #np.matrix usage is deprecated; convert to np.array
+
     #calculate cosine similarity
     sim_mat = cosine_similarity(conn_mat)
     
-    return sim_mat, conn_mat
+    return conn_mat, sim_mat
 
 def reorder_by_cosine(syn_df, has_soma=True, weight ='count', 
                       distance_threshold = 0, 
@@ -115,33 +126,37 @@ def reorder_by_cosine(syn_df, has_soma=True, weight ='count',
 
     #get weighted connectivity matrix from networkx graph
     if asymmetric:
-        conn_mat = get_asymm_conn_mat(syn_df, has_soma = has_soma, weight=weight)
+        conn_mat, sources, targets = get_asymm_conn_mat(syn_df, has_soma = has_soma, weight=weight) 
     else:
-        g = get_networkx_graph(syn_df)
+        g = get_networkx_graph(syn_df, has_soma = has_soma, edge_attr=weight)
         conn_mat = nx.to_numpy_matrix(g, weight=weight)
         
+    conn_mat = np.asarray(conn_mat) #np.matrix usage is deprecated; convert to np.array
+    
     #calculate cosine similarity
-    sim_mat = cosine_similarity(conn_mat)   
+    sim_mat = cosine_similarity(conn_mat)
     
     #clustering based on cosine similarity
-    
-    clustered_order = get_clustered_order(sim_mat)
+    row_ordered = get_clustered_order(sim_mat, distance_threshold=distance_threshold, n_clusters=n_clusters) 
     
     if asymmetric==True and column_order == 'cosine':
         column_sim_mat = cosine_similarity(conn_mat.T)
-        model = AgglomerativeClustering(distance_threshold=distance_threshold, n_clusters=n_clusters).fit(column_sim_mat)
-        column_ordered = get_clustered_order(model)
+        column_ordered = get_clustered_order(column_sim_mat, distance_threshold=distance_threshold, n_clusters=n_clusters)
     elif asymmetric == False and column_order == 'cosine':
-        column_ordered = clustered_order
+        column_ordered = row_ordered
     else:
         column_ordered = column_order
     
-    #ordering rows and columns by cosine similarity
-    conn_mat = conn_mat[clustered_order, :]
-    conn_mat = conn_mat[:,column_ordered]
-    
+    #reordering connectivity matrix 
+    conn_mat = conn_mat[row_ordered, :]
+    conn_mat = conn_mat[:, column_ordered]
+
     #reordering source similarity matrix
-    sim_mat = sim_mat[clustered_order, :]
-    sim_mat = sim_mat[:, clustered_order]
-    
-    return conn_mat, sim_mat
+    sim_mat = sim_mat[row_ordered, :]
+    sim_mat = sim_mat[:, row_ordered] 
+        
+    #reordering source and target IDs
+    sources_ordered = [sources[i] for i in row_ordered] 
+    targets_ordered = [targets[i] for i in column_ordered] 
+     
+    return conn_mat, sim_mat, sources_ordered, targets_ordered
