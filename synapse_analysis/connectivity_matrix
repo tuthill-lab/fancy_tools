@@ -53,17 +53,20 @@ def get_asymm_conn_mat(syn_df, has_soma = True, weight='count', soma_table = 'so
     
     # Get indices for g.nodes indicating which node IDs are sources and which are targets
     source_ix, target_ix = [], []
+    source_ids, target_ids = [], []
     for ix, i in enumerate(g.nodes()):
         if i in sources:
             source_ix.append(ix) 
+            source_ids.append(ix) 
         if i in targets:
-            target_ix.append(ix)    
+            target_ix.append(ix)
+            target_ids.append(ix) 
 
     conn_mat = nx.to_numpy_matrix(g, weight=weight) 
     asymm_conn_mat = conn_mat[source_ix,:]
     asymm_conn_mat = asymm_conn_mat[:,target_ix]
     
-    return asymm_conn_mat, sources, targets
+    return asymm_conn_mat, source_ids, target_ids
 
 
 def get_clustered_order(sim_mat, distance_threshold = 0, 
