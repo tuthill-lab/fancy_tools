@@ -1,0 +1,140 @@
+side,nerve,segment,function,muscle,rank,segID,id,valid,classification_system,cell_type,pt_supervoxel_id,pt_root_id,pt_position,preferred_pool
+L,Accessory,coxa,flex,trochanter_flexor,Ac,648518346479846132,290,t,A3_T1L,trochanter_flexor_in_coxa_Ac,72764168838880663,648518346479846132,[21575 87200  2242],trochanter_flexion
+L,Dorsal,thorax,stance,tergopleural_promotor_pleural_promotor_miller_28_30,0,648518346491655185,291,t,D1_T1L,tergopleural_promotor_pleural_promotor_in_thorax_miller_28_30,72975343790906622,648518346491655185,[28385 88521  2251],thorax_stance
+L,Accessory,thorax,swing,pleural_remotor_and_abductor_miller_29,0,648518346498402097,283,t,A4_T1L,pleural_remotor_and_abductor_in_thorax_miller_29,72834537583100984,648518346498402097,[24350 87262  2285],thorax_swing
+L,Dorsal,thorax,stance,tergopleural_promotor_pleural_promotor_miller_28_30,0,648518346520551990,292,t,D1_T1L,tergopleural_promotor_pleural_promotor_in_thorax_miller_28_30,72975275004512296,648518346520551990,[26759 87253  2174],thorax_stance
+L,Accessory,thorax,stance,sternal_adductor_miller_miller_in_thorax_miller_33,0,648518346486809241,285,t,A4_T1L,sternal_adductor_miller_in_thorax_miller_33,72904975181026144,648518346486809241,[26181 89068  2521],thorax_stance
+L,Accessory,thorax,swing,sternal_posterior_rotator_miller_32,0,648518346494806962,279,t,A1_T1L,sternal_posterior_rotator_in_thorax_miller_32,72483655733552219,648518346494806962,[ 12726 115166   1861],thorax_swing
+L,Accessory,thorax,swing,sternal_posterior_rotator_miller_32,0,648518346501837930,282,t,A1_T1L,sternal_posterior_rotator_in_thorax_miller_32,72342986830511451,648518346501837930,[  9590 117780   1629],thorax_swing
+L,Accessory,coxa,flex,trochanter_flexor,AcPst,648518346494082299,287,t,A2_T1L,trochanter_flexor_in_coxa_AcPst,72413355373453175,648518346494082299,[ 10872 118153   1266],trochanter_flexion
+L,Accessory,thorax,swing,pleural_remotor_and_abductor_miller_29,0,648518346486098834,284,t,A4_T1L,pleural_remotor_and_abductor_in_thorax_miller_29,72693868814306475,648518346486098834,[19270 88811  2289],thorax_swing
+L,Accessory,coxa,flex,trochanter_flexor,AcPst,648518346486120840,286,t,A2_T1L,trochanter_flexor_in_coxa_AcPst,72483655666524185,648518346486120840,[ 14058 115317   1758],trochanter_flexion
+L,Accessory,coxa,flex,trochanter_flexor,Ac,648518346499251291,288,t,A3_T1L,trochanter_flexor_in_coxa_Ac,72623431283432202,648518346499251291,[17583 86886  2142],trochanter_flexion
+L,Accessory,coxa,flex,trochanter_flexor,Ac,648518346517668968,289,t,A3_T1L,trochanter_flexor_in_coxa_Ac,72834468863862859,648518346517668968,[22736 85820  2309],trochanter_flexion
+L,Dorsal,thorax,stance,tergopleural_promotor_pleural_promotor_miller_28_30,0,648518346489655756,293,t,D2_T1L,tergopleural_promotor_pleural_promotor_in_thorax_miller_28_30,73116080876550816,648518346489655756,[31494 89253  1423],thorax_stance
+L,Dorsal,thorax,stance,tergopleural_promotor_pleural_promotor_miller_28_30,0,648518346491574440,294,t,D2_T1L,tergopleural_promotor_pleural_promotor_in_thorax_miller_28_30,72904974778207768,648518346491574440,[26568 89275  1711],thorax_stance
+L,Accessory,thorax,swing,sternal_posterior_rotator_miller_32,0,648518346480104102,281,t,A1_T1L,sternal_posterior_rotator_in_thorax_miller_32,72413286922170067,648518346480104102,[ 10952 116017   1681],thorax_swing
+L,Accessory,thorax,swing,sternal_posterior_rotator_miller_32,0,648518346499790035,280,t,A1_T1L,sternal_posterior_rotator_in_thorax_miller_32,72413355507544480,648518346499790035,[ 11145 117357   1478],thorax_swing
+L,Leg,tibia,unknown,tarsus_unidentified,A1,648518346493775985,295,t,L1_T1L,tarsus_unidentified_in_tibia_A1,72764168973359401,648518346493775985,[21620 87497  2568],tarsus_depressor_noid
+L,Leg,femur,flex,auxiliary_tibia_flexor,A1,648518346497576950,296,t,L1_T1L,auxiliary_tibia_flexor_in_femur_A1,72764237692500983,648518346497576950,[21114 89632  2517],auxiliary_tibia_flexor_B
+L,Leg,femur,flex,auxiliary_tibia_flexor,A1,648518346514147038,297,t,L1_T1L,auxiliary_tibia_flexor_in_femur_A1,72693937667951418,648518346514147038,[20102 90956  2536],auxiliary_tibia_flexor_B
+L,Ventral,thorax,extend,tergotrochanter,2,648518346509527171,342,t,V2_T1L,tergotrochanter_in_thorax_2,72975343589667059,648518346509527171,[28266 88474  1899],trochanter_extension
+L,Leg,femur,flex,auxiliary_tibia_flexor,E,648518346508779327,323,t,L1_T1L,auxiliary_tibia_flexor_in_femur_E,72693800228903574,648518346508779327,[19013 86939  2469],auxiliary_tibia_flexor_E
+L,Leg,tibia,unknown,tarsus_unidentified,Bslow,648518346484097831,302,t,L1_T1L,tarsus_unidentified_in_tibia_Bslow,72764169040166640,648518346484097831,[20633 87133  2615],tarsus_depressor_noid
+L,Leg,femur,flex,auxiliary_tibia_flexor,Bslow,648518346485383955,304,t,L1_T1L,auxiliary_tibia_flexor_in_femur_Bslow,72553200246720980,648518346485383955,[15452 91558  2651],main_tibia_flexor
+L,Leg,femur,flex,auxiliary_tibia_flexor,Bslow,648518346499814867,306,t,L1_T1L,auxiliary_tibia_flexor_in_femur_Bslow,72975275339924788,648518346499814867,[26734 87731  2784],main_tibia_flexor
+R,Leg,femur,flex,auxiliary_tibia_flexor,Bslow,648518346509699273,375,t,L1_T1R,auxiliary_tibia_flexor_in_femur_Bslow,73678962781859891,648518346509699273,[48049 86163  2805],
+L,Leg,femur,flex,main_tibia_flexor,2,648518346491594152,309,t,L1_T1L,main_tibia_flexor_in_femur_2,72553200179656434,648518346491594152,[14458 90265  2554],main_tibia_flexor
+L,Leg,femur,flex,main_tibia_flexor,3,648518346491928082,310,t,L1_T1L,main_tibia_flexor_in_femur_3,72764237826737613,648518346491928082,[21341 89358  2718],main_tibia_flexor
+L,Leg,femur,flex,auxiliary_tibia_flexor,A2,648518346524111877,299,t,L1_T1L,auxiliary_tibia_flexor_in_femur_A2,72623431484675713,648518346524111877,[17820 87590  2464],auxiliary_tibia_flexor_B
+L,Leg,femur,flex,auxiliary_tibia_flexor,A2,648518346475456896,298,t,L1_T1L,auxiliary_tibia_flexor_in_femur_A2,72834537717335085,648518346475456896,[22898 87329  2528],auxiliary_tibia_flexor_B
+L,Leg,ltm,claw,ltm,large,648518346517360426,313,t,L1_T1L,ltm_medial_dendrite,72834675290499495,648518346517360426,[23505 91836  2730],ltm
+L,Leg,tibia,unknown,tarsus_unidentified,A2,648518346503952224,301,t,L1_T1L,tarsus_unidentified_in_tibia_A2,72553200313457288,648518346503952224,[16326 90435  2698],tarsus_depressor_noid
+L,Leg,ltm,claw,ltm,small,648518346494054647,316,t,L1_T1L,ltm_small_medial_dendrite,72553200314029096,648518346494054647,[15352 91783  2825],ltm
+L,Leg,ltm,claw,ltm,tiny,648518346497452278,318,t,L1_T1L,ltm_no_medial_dendrite,72482831569839159,648518346497452278,[13986 90610  2805],ltm
+L,Leg,ltm,claw,ltm,tiny,648518346489317209,319,t,L1_T1L,ltm_no_medial_dendrite,72482831636691164,648518346489317209,[14242 91889  2882],ltm
+L,Leg,tibia,flex,tarsus_depressor,medial,648518346489595743,321,t,L1_T1L,tarsus_depressor_in_tibia_medial,72553062740634458,648518346489595743,[15259 87745  2517],tarsus_depressor_med_venU
+L,Leg,tibia,unknown,tarsus_unidentified,E,648518346502925179,322,t,L1_T1L,tarsus_unidentified_in_tibia_E,72904906461502730,648518346502925179,[24999 86593  2490],tarsus_depressor_noid
+L,Ventral,coxa,flex,trochanter_flexor,Vn,648518346497643766,337,t,V1_T1L,trochanter_flexor_in_coxa_Vn,72693868747178343,648518346497643766,[19263 90022  2155],trochanter_flexion
+L,Leg,trochanter,reductor,femur_reductor,0,648518346489628029,324,t,L2_T1L,femur_reductor_in_trochanter,73045644084019426,648518346489628029,[29858 87376  2765],femur_reductor
+L,Leg,ltm,claw,ltm,large,648518346498413588,314,t,L1_T1L,ltm_medial_dendrite,72623500338438060,648518346498413588,[17597 90020  2740],ltm
+L,Leg,femur,flex,main_tibia_flexor,0,648518346509708489,308,t,L1_T1L,main_tibia_flexor_in_femur_0,72904906528646317,648518346509708489,[25694 86622  2634],main_tibia_flexor
+L,Leg,trochanter,reductor,femur_reductor,0,648518346477545998,329,t,L2_T1L,femur_reductor_in_trochanter_0,72553199978233860,648518346477545998,[14358 92008  2105],femur_reductor
+L,Leg,coxa,extend,trochanter_extensor,Lg,648518346503654305,336,t,L5_T1L,trochanter_extensor_in_coxa_Lg,72624186795103813,648518346503654305,[ 16552 109651   1364],trochanter_extension
+L,Leg,coxa,flex,trochanter_promotor,0,648518346482880230,331,t,L3_T1L,trochanter_promotor_in_coxa,72904974979596808,648518346482880230,[25292 88266  2123],trochanter_flexion
+L,Leg,coxa,flex,trochanter_promotor,0,648518346475233889,332,t,L3_T1L,trochanter_promotor_in_coxa,72904975180805852,648518346475233889,[25366 89249  2453],trochanter_flexion
+R,Leg,femur,flex,auxiliary_tibia_flexor,Bslow,648518346501300835,373,t,L1_T1R,auxiliary_tibia_flexor_in_femur_Bslow,74171681429788095,648518346501300835,[61648 90977  2725],
+L,Leg,trochanter,reductor,femur_reductor,0,648518346499405150,325,t,L2_T1L,femur_reductor_in_trochanter,72482831435430456,648518346499405150,[14230 91313  2528],femur_reductor
+L,Leg,femur,flex,auxiliary_tibia_flexor,Bslow,648518346509726921,303,t,L1_T1L,auxiliary_tibia_flexor_in_femur_Bslow,72834675156230769,648518346509726921,[23055 92004  2509],main_tibia_flexor
+L,Leg,coxa,extend,trochanter_extensor,Lg,648518346486198114,335,t,L4_T1L,trochanter_extensor_in_coxa_Lg,72904837473346718,648518346486198114,[26335 85449  1934],trochanter_extension
+L,Ventral,coxa,flex,trochanter_flexor,Vn,648518346507176223,339,t,V1_T1L,trochanter_flexor_in_coxa_Vn,72834537381811483,648518346507176223,[23983 87237  1874],trochanter_flexion
+L,Leg,ltm,claw,ltm,large,648518346494032139,312,t,L1_T1L,ltm_medial_dendrite,72975275272887982,648518346494032139,[26764 87606  2670],ltm
+L,Leg,femur,extend,tibia_extensor,seti,648518346480572929,333,t,L4_T1L,tibia_extensor_in_femur_seti,72553200313753006,648518346480572929,[15025 92118  2727],tibia_extensor
+L,Ventral,thorax,extend,extracoxal_trochanter_depressor,Vn,648518346466720110,344,t,V5_T1L,extracoxal_trochanter_depressor_in_thorax_Vn,72975275205735565,648518346466720110,[27494 86790  2515],trochanter_extension
+L,Leg,trochanter,reductor,femur_reductor,0,648518346484725405,328,t,L2_T1L,femur_reductor_in_trochanter_0,72834674954969986,648518346484725405,[22644 90950  2139],femur_reductor
+L,Ventral,thorax,stance,sternal_anterior_rotator_miller_31,0,648518346496721965,347,t,V4_T1L,sternal_anterior_rotator_in_thorax_miller_31,72834537516125224,648518346496721965,[23167 87333  2184],thorax_stance
+R,Accessory,thorax,swing,sternal_posterior_rotator_miller_32,0,648518346496568956,348,t,A1_T1R,sternal_posterior_rotator_in_thorax_miller_32,74172437075827522,648518346496568956,[ 63395 114393   2304],
+R,Accessory,thorax,swing,sternal_posterior_rotator_miller_32,0,648518346480337622,349,t,A1_T1R,sternal_posterior_rotator_in_thorax_miller_32,74172506130666133,648518346480337622,[ 63084 116459   2863],
+R,Accessory,thorax,swing,sternal_posterior_rotator_miller_32,0,648518346484698013,350,t,A1_T1R,sternal_posterior_rotator_in_thorax_miller_32,74102136983590282,648518346484698013,[ 59659 115855   2065],
+R,Accessory,thorax,swing,sternal_posterior_rotator_miller_32,0,648518346490341212,351,t,A1_T1R,sternal_posterior_rotator_in_thorax_miller_32,74242874740635376,648518346490341212,[ 64871 116643   2615],
+R,Accessory,thorax,swing,pleural_remotor_and_abductor_miller_29,0,648518346493922958,352,t,A4_T1R,pleural_remotor_and_abductor_in_thorax_miller_29,73819700001644126,648518346493922958,[52291 87723  2256],
+R,Accessory,thorax,swing,pleural_remotor_and_abductor_miller_29,0,648518346489600015,353,t,A4_T1R,pleural_remotor_and_abductor_in_thorax_miller_29,73960437422964960,648518346489600015,[55720 87565  2151],
+R,Accessory,thorax,stance,sternal_adductor_miller_miller_in_thorax_miller_33,0,648518346502341446,354,t,A4_T1R,sternal_adductor_miller_in_thorax_miller_33,73678962714585840,648518346502341446,[47413 87016  2611],
+R,Accessory,coxa,flex,trochanter_flexor,AcPst,648518346520515638,355,t,A2_T1R,trochanter_flexor_in_coxa_AcPst,74172506063635619,648518346520515638,[ 62839 114736   2779],
+R,Accessory,coxa,flex,trochanter_flexor,AcPst,648518346494047735,356,t,A2_T1R,trochanter_flexor_in_coxa_AcPst,74172437411238510,648518346494047735,[ 63354 114424   2857],
+R,Accessory,coxa,flex,trochanter_flexor,Ac,648518346490913569,357,t,A3_T1R,trochanter_flexor_in_coxa_Ac,73889931172615514,648518346490913569,[53952 83831  2023],
+R,Accessory,coxa,flex,trochanter_flexor,Ac,648518346499527237,358,t,A3_T1R,trochanter_flexor_in_coxa_Ac,73960437355884126,648518346499527237,[55403 87512  2040],
+R,Accessory,coxa,flex,trochanter_flexor,Ac,648518346477553166,359,t,A3_T1R,trochanter_flexor_in_coxa_Ac,73749400111040523,648518346477553166,[50277 89558  2464],
+R,Dorsal,thorax,stance,tergopleural_promotor_pleural_promotor_miller_28_30,0,648518346491452870,360,t,D1_T1R,tergopleural_promotor_pleural_promotor_in_thorax_miller_28_30,73749331324539394,648518346491452870,[49611 86600  2367],
+R,Dorsal,thorax,stance,tergopleural_promotor_pleural_promotor_miller_28_30,0,648518346493967627,361,t,D1_T1R,tergopleural_promotor_pleural_promotor_in_thorax_miller_28_30,73608524982582780,648518346493967627,[46817 85529  2115],
+R,Dorsal,thorax,stance,tergopleural_promotor_pleural_promotor_miller_28_30,0,648518346486571929,362,t,D2_T1R,tergopleural_promotor_pleural_promotor_in_thorax_miller_28_30,73960506008175526,648518346486571929,[56980 88953  1882],
+R,Dorsal,thorax,stance,tergopleural_promotor_pleural_promotor_miller_28_30,0,648518346503917664,363,t,D2_T1R,tergopleural_promotor_pleural_promotor_in_thorax_miller_28_30,73960506075264717,648518346503917664,[57123 89956  2003],
+R,Leg,tibia,unknown,tarsus_unidentified,A1,648518346491497534,364,t,L1_T1R,tarsus_unidentified_in_tibia_A1,73960437825177284,648518346491497534,[55792 86474  2850],
+R,Leg,femur,flex,auxiliary_tibia_flexor,A1,648518346483182756,365,t,L1_T1R,auxiliary_tibia_flexor_in_femur_A1,73960437825499197,648518346483182756,[56585 87472  2864],
+R,Leg,femur,flex,auxiliary_tibia_flexor,A1,648518346492577211,366,t,L1_T1R,auxiliary_tibia_flexor_in_femur_A1,73819700269945592,648518346492577211,[51575 87958  2719],
+R,Leg,femur,flex,auxiliary_tibia_flexor,A2,648518346479180177,367,t,L1_T1R,auxiliary_tibia_flexor_in_femur_A2,73749262739215644,648518346479180177,[50254 84462  2603],
+L,Ventral,thorax,extend,extracoxal_trochanter_depressor,Vn,648518346480146342,345,t,V3_T1L,extracoxal_trochanter_depressor_in_thorax_Vn,72905043430667926,648518346480146342,[24901 92075  1586],trochanter_extension
+R,Leg,femur,flex,auxiliary_tibia_flexor,A2,648518346492305091,369,t,L1_T1R,auxiliary_tibia_flexor_in_femur_A2,73819631483474788,648518346492305091,[51235 85355  2615],
+R,Leg,tibia,unknown,tarsus_unidentified,A2,648518346492073516,370,t,L1_T1R,tarsus_unidentified_in_tibia_A2,73960437892513380,648518346492073516,[55781 86850  2962],
+R,Leg,tibia,unknown,tarsus_unidentified,Bslow,648518346490347786,371,t,L1_T1R,tarsus_unidentified_in_tibia_Bslow,74101312887129734,648518346490347786,[60545 91348  3206],
+R,Leg,femur,flex,auxiliary_tibia_flexor,Bslow,648518346490791971,372,t,L1_T1R,auxiliary_tibia_flexor_in_femur_Bslow,73819768922406076,648518346490791971,[52108 90029  2637],
+R,Leg,femur,flex,auxiliary_tibia_flexor,Bslow,648518346489629023,374,t,L1_T1R,auxiliary_tibia_flexor_in_femur_Bslow,73890068947161648,648518346489629023,[55014 88060  2655],
+R,Leg,femur,flex,main_tibia_flexor,0,648518346492593595,376,t,L1_T1R,main_tibia_flexor_in_femur_0,73890000227748737,648518346492593595,[54730 84777  2673],
+R,Leg,femur,flex,main_tibia_flexor,0,648518346494836402,377,t,L1_T1R,main_tibia_flexor_in_femur_0,73890000361715668,648518346494836402,[53830 85759  2840],
+R,Leg,femur,flex,main_tibia_flexor,2,648518346483122764,378,t,L1_T1R,main_tibia_flexor_in_femur_2,73960437557109121,648518346483122764,[56202 87404  2385],
+R,Leg,femur,flex,main_tibia_flexor,3,648518346481236837,379,t,L1_T1R,main_tibia_flexor_in_femur_3,73890068879967186,648518346481236837,[55099 86761  2472],
+R,Leg,femur,flex,main_tibia_flexor,4,648518346503918688,380,t,L1_T1R,main_tibia_flexor_in_femur_4,73960506477789730,648518346503918688,[55504 89665  2706],
+R,Leg,ltm,claw,ltm,large,648518346499420391,382,t,L1_T1R,ltm_medial_dendrite,73890137867990982,648518346499420391,[54437 89811  3016],
+R,Leg,ltm,claw,ltm,large,648518346503908960,383,t,L1_T1R,ltm_medial_dendrite,73819837910227031,648518346503908960,[52198 90252  3100],
+R,Leg,ltm,claw,ltm,large,648518346477866733,384,t,L1_T1R,ltm_medial_dendrite,73960437691586049,648518346477866733,[56540 87205  2684],
+R,Leg,ltm,claw,ltm,small,648518346500391640,385,t,L1_T1R,ltm_small_medial_dendrite,73749400245377010,648518346500391640,[50961 89725  2766],
+R,Leg,ltm,claw,ltm,small,648518346501223267,386,t,L1_T1R,ltm_small_medial_dendrite,73819700404195122,648518346501223267,[52311 87533  3006],
+R,Leg,ltm,claw,ltm,tiny,648518346489905626,387,t,L1_T1R,ltm_no_medial_dendrite,74030806234050087,648518346489905626,[57401 86881  2238],
+R,Leg,ltm,claw,ltm,tiny,648518346492029228,388,t,L1_T1R,ltm_no_medial_dendrite,73819631617655521,648518346492029228,[52610 85976  2897],
+R,Leg,tibia,flex,tarsus_depressor,ventralU,648518346503918944,389,t,L1_T1R,tarsus_depressor_in_tibia_ventralU,73960575063225510,648518346503918944,[56097 90227  2545],
+L,Leg,tibia,flex,tarsus_depressor,ventralU,648518346496005478,320,t,L1_T1L,tarsus_depressor_in_tibia_ventralU,73045712736535157,648518346496005478,[29188 88984  2669],tarsus_depressor_med_venU
+R,Leg,tibia,unknown,tarsus_unidentified,E,648518346500346328,391,t,L1_T1R,tarsus_unidentified_in_tibia_E,73960506544632062,648518346500346328,[55946 88273  2837],
+R,Leg,tibia,unknown,tarsus_unidentified,E,648518346489631583,392,t,L1_T1R,tarsus_unidentified_in_tibia_E,73890069148461383,648518346489631583,[53704 86535  3021],
+R,Leg,femur,flex,auxiliary_tibia_flexor,E,648518346488768349,393,t,L1_T1R,auxiliary_tibia_flexor_in_femur_E,73960575398314926,648518346488768349,[56856 90127  3086],
+R,Leg,trochanter,reductor,femur_reductor,0,648518346486618829,394,t,L2_T1R,femur_reductor_in_trochanter,73608525183925532,648518346486618829,[46927 85388  2543],
+R,Leg,trochanter,reductor,femur_reductor,0,648518346499935750,395,t,L2_T1R,femur_reductor_in_trochanter,73960506142445890,648518346499935750,[55843 88497  2179],
+R,Leg,trochanter,reductor,femur_reductor,0,648518346486619085,396,t,L2_T1R,femur_reductor_in_trochanter,73819768922192827,648518346486619085,[52534 88655  2584],
+R,Leg,trochanter,reductor,femur_reductor,0,648518346499760851,397,t,L2_T1R,femur_reductor_in_trochanter,73890137464982500,648518346499760851,[53993 89622  2196],
+R,Leg,trochanter,reductor,femur_reductor,0,648518346479173009,398,t,L2_T1R,femur_reductor_in_trochanter_0,74101243831732131,648518346479173009,[60898 90061  2564],
+R,Leg,coxa,flex,trochanter_promotor,0,648518346520187729,400,t,L3_T1R,trochanter_promotor_in_coxa,73890137532483542,648518346520187729,[53838 88150  2407],
+R,Leg,coxa,flex,trochanter_promotor,0,648518346490347530,401,t,L3_T1R,trochanter_promotor_in_coxa,73819631349233966,648518346490347530,[53178 84262  2372],
+R,Leg,coxa,flex,trochanter_promotor,0,648518346512131374,402,t,L3_T1R,trochanter_promotor_in_coxa,73749400178299722,648518346512131374,[49394 89755  2660],
+R,Leg,femur,extend,tibia_extensor,seti,648518346489643212,403,t,L4_T1R,tibia_extensor_in_femur_seti,73819700270016761,648518346489643212,[52001 86333  2743],
+R,Leg,femur,extend,tibia_extensor,feti,648518346480242902,404,t,L4_T1R,tibia_extensor_in_femur_feti,73678893659489454,648518346480242902,[48538 84219  1962],
+R,Leg,coxa,extend,trochanter_extensor,Lg,648518346493661944,405,t,L4_T1R,trochanter_extensor_in_coxa_Lg,73819700135819297,648518346493661944,[52767 86951  2487],
+R,Leg,coxa,extend,trochanter_extensor,Lg,648518346489611133,406,t,L5_T1R,trochanter_extensor_in_coxa_Lg,74101930624079446,648518346489611133,[ 60830 108620   1721],
+R,Ventral,coxa,flex,trochanter_flexor,Vn,648518346503919200,407,t,V1_T1R,trochanter_flexor_in_coxa_Vn,73960506276574569,648518346503919200,[55830 89982  2400],
+R,Ventral,coxa,flex,trochanter_flexor,Vn,648518346494836658,408,t,V1_T1R,trochanter_flexor_in_coxa_Vn,73889999959270933,648518346494836658,[54616 85905  2127],
+R,Ventral,coxa,flex,trochanter_flexor,Vn,648518346471677083,409,t,V1_T1R,trochanter_flexor_in_coxa_Vn,73890206251737467,648518346471677083,[54536 90225  2333],
+R,Ventral,thorax,extend,tergotrochanter,0,648518346483548053,410,t,V3_T1R,tergotrochanter_in_thorax_0,73889999757696699,648518346483548053,[54174 85748  1791],
+R,Ventral,thorax,extend,tergotrochanter,1,648518346494836914,411,t,V2_T1R,tergotrochanter_in_thorax_1,73960506075251475,648518346494836914,[57339 88452  1999],
+R,Ventral,thorax,extend,tergotrochanter,2,648518346517360452,412,t,V2_T1R,tergotrochanter_in_thorax_2,73749468427814896,648518346517360452,[51167 90285  1680],
+R,Ventral,thorax,extend,tergotrochanter,3,648518346499763923,413,t,V3_T1R,tergotrochanter_in_thorax_3,73749262538016575,648518346499763923,[49727 85190  2264],
+R,Ventral,thorax,extend,extracoxal_trochanter_depressor,Vn,648518346501264984,414,t,V5_T1R,extracoxal_trochanter_depressor_in_thorax_Vn,73890000093079139,648518346501264984,[54883 84397  2319],
+R,Ventral,thorax,extend,extracoxal_trochanter_depressor,Vn,648518346476492918,415,t,V3_T1R,extracoxal_trochanter_depressor_in_thorax_Vn,73819768452722670,648518346476492918,[53218 89773  1773],
+R,Ventral,thorax,stance,sternal_anterior_rotator_miller_31,0,648518346494837170,416,t,V4_T1R,sternal_anterior_rotator_in_thorax_miller_31,73819631080756230,648518346494837170,[51491 84167  1836],
+R,Ventral,thorax,stance,sternal_anterior_rotator_miller_31,0,648518346495499883,417,t,V4_T1R,sternal_anterior_rotator_in_thorax_miller_31,73749262537938160,648518346495499883,[50618 85421  2234],
+R,Leg,tibia,flex,tarsus_depressor,medial,648518346520229713,390,t,L1_T1R,tarsus_depressor_in_tibia_medial,73890137733816602,648518346520229713,[54506 88712  2796],
+L,Leg,trochanter,reductor,femur_reductor,0,648518346499375454,327,t,L2_T1L,femur_reductor_in_trochanter,72904974979562931,648518346499375454,[26129 89938  2100],femur_reductor
+R,Leg,trochanter,reductor,femur_reductor,0,648518346493764856,399,t,L2_T1R,femur_reductor_in_trochanter_0,74101312618532143,648518346493764856,[60197 90640  2597],
+R,Leg,femur,flex,auxiliary_tibia_flexor,A2,648518346465963568,368,t,L1_T1R,auxiliary_tibia_flexor_in_femur_A2,74030875289214644,648518346465963568,[58252 88943  2902],
+L,Leg,coxa,flex,trochanter_promotor,0,648518346483147454,330,t,L3_T1L,trochanter_promotor_in_coxa,72834675156180869,648518346483147454,[23917 91774  2481],trochanter_flexion
+L,Leg,ltm,claw,ltm,large,648518346477891821,315,t,L1_T1L,ltm_medial_dendrite,72764306546195074,648518346477891821,[20938 91662  2708],ltm
+R,Leg,ltm,claw,ltm,large,648518346503947872,381,t,L1_T1R,ltm_medial_dendrite,73819769056510755,648518346503947872,[51635 88345  2844],
+L,Ventral,coxa,flex,trochanter_flexor,Vn,648518346479231377,338,t,V1_T1L,trochanter_flexor_in_coxa_Vn,72623431350591952,648518346479231377,[17632 86321  2265],trochanter_flexion
+L,Ventral,thorax,extend,tergotrochanter,0,648518346486616111,340,t,V3_T1L,tergotrochanter_in_thorax_0,73045781120322699,648518346486616111,[30633 90820  1976],trochanter_extension
+L,Leg,femur,flex,auxiliary_tibia_flexor,Bslow,648518346488733681,305,t,L1_T1L,auxiliary_tibia_flexor_in_femur_Bslow,72693868948486343,648518346488733681,[18966 89119  2534],main_tibia_flexor
+L,Leg,femur,flex,main_tibia_flexor,0,648518346498405396,307,t,L1_T1L,main_tibia_flexor_in_femur_0,72623431551729501,648518346498405396,[17078 87425  2586],main_tibia_flexor
+L,Leg,ltm,claw,ltm,small,648518346465977136,317,t,L1_T1L,ltm_small_medial_dendrite,72834606436679217,648518346465977136,[23600 88276  2454],ltm
+L,Leg,trochanter,reductor,femur_reductor,0,648518346466742382,326,t,L2_T1L,femur_reductor_in_trochanter,72482831368300777,648518346466742382,[13932 91818  2387],femur_reductor
+L,Leg,femur,extend,tibia_extensor,feti,648518346488512137,334,t,L4_T1L,tibia_extensor_in_femur_feti,72904906125917495,648518346488512137,[25239 86800  1848],tibia_extensor
+L,Leg,femur,flex,main_tibia_flexor,4,648518346480295739,311,t,L1_T1L,main_tibia_flexor_in_femur_4,72623500137174407,648518346480295739,[18229 89516  2400],main_tibia_flexor
+L,Leg,femur,flex,auxiliary_tibia_flexor,A2,648518346482850213,300,t,L1_T1L,auxiliary_tibia_flexor_in_femur_A2,72975275272752584,648518346482850213,[28646 87284  2618],auxiliary_tibia_flexor_B
+L,Ventral,thorax,stance,sternal_anterior_rotator_miller_31,0,648518346483739567,346,t,V4_T1L,sternal_anterior_rotator_in_thorax_miller_31,72623499935890376,648518346483739567,[17144 89099  2005],thorax_stance
+L,Ventral,thorax,extend,tergotrochanter,1,648518346493010864,341,t,V2_T1L,tergotrochanter_in_thorax_1,72834674753554975,648518346493010864,[22701 91045  1692],trochanter_extension
+L,Ventral,thorax,extend,tergotrochanter,3,648518346474565314,343,t,V2_T1L,tergotrochanter_in_thorax_3,72764237491106224,648518346474565314,[21122 88740  2060],trochanter_extension
