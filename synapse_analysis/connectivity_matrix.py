@@ -27,6 +27,7 @@ def get_networkx_graph(syn_df, source = 'pre_pt_root_id',
                                   target=target, edge_attr=edge_attr)
     return graph
 
+
 def get_edge_df(syn_df, source = 'pre_pt_root_id', 
                 target = 'post_pt_root_id', edge_attr = 'count',
                 soma_table = 'soma_jan2022'):
@@ -105,6 +106,7 @@ def get_clustered_order(sim_mat, distance_threshold = 0,
     
     return parsed_order
 
+
 def get_sim_matrix(syn_df, asymmetric = True, weight='count', has_soma = True):
     
     #get weighted connectivity matrix from networkx graph
@@ -120,6 +122,7 @@ def get_sim_matrix(syn_df, asymmetric = True, weight='count', has_soma = True):
     sim_mat = cosine_similarity(conn_mat)
     
     return conn_mat, sim_mat
+
 
 def reorder_by_cosine(syn_df, has_soma=True, weight ='count', 
                       distance_threshold = 0, 
